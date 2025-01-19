@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Метрика</title>
+    <link rel="icon" href="resources/favicon.png" type="image/png">
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -47,15 +49,17 @@
                     Современные и стильные интерьеры для комфортной жизни
                 </h1>
                 <div class="interior__wrapper">
-                    <img class="interior__img" src="resources/1.jpg" alt="Серый стул">
-                    <p class="interior__text">
-                        Мы - команда квалифицированных дизайнеров и архитекторов,
-                        занимающихся разработкой и реализацией дизайн-проектов
-                    </p>
+                    <div class="interior__img">
+                        <p class="interior__text">
+                            Мы - команда квалифицированных дизайнеров и архитекторов,
+                            занимающихся разработкой и реализацией дизайн-проектов
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- Interior -->
+
         <section class="about" id="about">
             <div class="container">
                 <h2 class="about__title title">О НАС</h2>
@@ -69,22 +73,35 @@
             </div>
         </section>
         <!-- About -->
+
         <section class="projects" id="projects">
             <div class="container">
                 <h2 class="projects__title">проекты</h2>
                 <ul class="projects-lists">
                     <li class="project-list">
-                        <img class="project-list__img" src="resources/2.jpg" alt="Коричневый диван">
+                        <picture>
+                            <source media="(max-width: 500px)" srcset="resources/projects/1-phone.jpg" />
+                            <source media="(max-width: 1199px)" srcset="resources/projects/1-tablet.jpg" />
+                            <img class="project-list__img" src="resources/projects/1.jpg" alt="Коричневый диван">
+                        </picture>
                         <h3 class="project-list__title">ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023</h3>
                         <a class="project-list__link" href="#">Подробнее →</a>
                     </li>
                     <li class="project-list">
-                        <img class="project-list__img" src="resources/3.jpg" alt="Журнальный стол">
+                        <picture>
+                            <source media="(max-width: 500px)" srcset="resources/projects/2-phone.jpg">
+                            <source media="(max-width: 1199px)" srcset="resources/projects/2-tablet.jpg">
+                            <img class="project-list__img" src="resources/projects/2.jpg" alt="Журнальный стол">
+                        </picture>
                         <h3 class="project-list__title">ЖК НОРВЕЖСКИЙ ПАРК — 75 М² — 2023</h3>
                         <a class="project-list__link" href="#">Подробнее →</a>
                     </li>
                     <li class="project-list">
-                        <img class="project-list__img" src="resources/4.jpg" alt="Обеденный стол">
+                        <picture>
+                            <source media="(max-width: 500px)" srcset="resources/projects/3-phone.jpg">
+                            <source media="(max-width: 1199px)" srcset="resources/projects/3-tablet.jpg">
+                            <img class="project-list__img" src="resources/projects/3.jpg" alt="Журнальный стол">
+                        </picture>
                         <h3 class="project-list__title">ЖК СОСНОВСКИЕ ОЗЕРА — 94 М² — 2022</h3>
                         <a class="project-list__link" href="#">Подробнее →</a>
                     </li>
@@ -93,6 +110,7 @@
             </div>
         </section>
         <!-- Projects -->
+
         <section class="services" id="services">
             <div class="container">
                 <h2 class="services__title">Услуги</h2>
@@ -117,12 +135,14 @@
             </div>
         </section>
         <!-- Services -->
+
         <section class="full-screen">
             <div class="full-screen__container container">
                 <h3 class="full-screen__text">Проект Двухкомнатной квартиры в ЖК Лесной Пейзаж</h3>
             </div>
         </section>
         <!-- Full screen -->
+
         <section class="contacts" id="contacts">
             <div class="container">
                 <div class="contacts__wrapper">
@@ -139,6 +159,7 @@
             </div>
         </section>
         <!-- Contacts -->
+
     </main>
     <!-- Main -->
 
