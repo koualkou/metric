@@ -1,0 +1,24 @@
+.footer {
+    padding: 58px 0 30px 0;
+    background: #121212;
+    color: #fff;
+}
+
+.footer__wrapper {
+    margin-bottom: 87px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav__link_transparent:hover {
+    opacity: 50%;
+}
+
+.footer__text {
+    text-align: center;
+    opacity: 50%;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27.32px;
+
+}
