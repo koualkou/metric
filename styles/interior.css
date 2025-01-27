@@ -1,0 +1,92 @@
+.interior {
+  padding-bottom: 151px;
+}
+
+.interior__title {
+  max-width: 956px;
+  margin-bottom: 30px;
+  line-height: 60px;
+  font-size: 60px;
+}
+
+.interior__wrapper {
+  position: relative;
+  height: 500px;
+}
+
+.interior__img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-image: url(../resources/interior.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.interior__text {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+  max-width: 430px;
+  font-size: 20px;
+  line-height: 27.32px;
+  color: #fff;
+}
+/* Interior */
+
+@media (max-width: 1199px) {
+  .interior {
+    padding-bottom: 120px;
+  }
+
+  .interior__title {
+    font-size: 50px;
+    max-width: 802px;
+  }
+
+  .interior__wrapper {
+    height: 400px;
+  }
+
+  .interior__text {
+    bottom: 30px;
+  }
+
+  .interior__img {
+    background-image: url(../resources/interior-tablet.jpg);
+    background-position: 0 100%;
+  }
+}
+/* @Media 1199*/
+
+@media (max-width: 767px) {
+  .interior {
+    padding-bottom: 82px;
+  }
+
+  .interior__title {
+    margin-bottom: 25px;
+    font-size: 30px;
+    line-height: 31.62px;
+  }
+
+  .interior__text {
+    max-width: 312px;
+    left: 15px;
+    bottom: 15px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 21.86px;
+  }
+}
+/* @Media 767*/
+
+@media (max-width: 500px) {
+  .interior__img {
+    background-image: url(../resources/interior-phone.jpg);
+  }
+
+  .interior__wrapper {
+    height: 304px;
+  }
+}

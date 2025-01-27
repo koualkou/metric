@@ -1,0 +1,70 @@
+@import "header.css";
+@import "interior.css";
+@import "about.css";
+@import "projects.css";
+@import "services.css";
+@import "reviews.css";
+@import "full-screen.css";
+@import "contacts.css";
+@import "footer.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Manrope", "sans-serif";
+
+  background: #fff;
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 24.59px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 40.98px;
+}
+
+h1,
+h2,
+h3,
+a,
+p,
+span,
+div {
+  letter-spacing: -0.03em;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+/* Style */
+
+@media (max-width: 1199px) {
+  h3 {
+    font-size: 25px;
+  }
+
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 13px;
+  }
+}
+/* @Media */

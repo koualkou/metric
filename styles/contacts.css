@@ -1,0 +1,75 @@
+.contacts {
+  padding: 150px 0 119px 0;
+}
+
+.wrapper {
+  width: 100px;
+  height: 100px;
+}
+
+.contacts__text {
+  margin-bottom: 74px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.59px;
+  text-transform: uppercase;
+}
+
+.contacts__lists {
+  display: flex;
+  justify-content: space-between;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px;
+}
+
+.contacts__link-number {
+  position: relative;
+  display: block;
+  margin-bottom: 31px;
+  letter-spacing: -0.03px;
+}
+
+.contacts__link-number:after {
+  position: absolute;
+  top: -50px;
+  left: -6px;
+  width: 24px;
+  height: 24px;
+  content: "";
+  background-image: url(../resources/iphone-icon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+
+.contacts__link-mail {
+  position: relative;
+  opacity: 50%;
+  color: #121212;
+  border-bottom: 2px solid #121212;
+}
+
+.contacts__link-mail:after {
+  position: absolute;
+  top: -50px;
+  left: -6px;
+  width: 24px;
+  height: 24px;
+  content: "";
+  background-image: url(../resources/letter-icon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+
+@media (max-width: 1199px) {
+  .contacts__lists {
+    flex-direction: column;
+  }
+
+  .contacts__lists {
+    font-size: 35px;
+    line-height: 45.62px;
+  }
+}
