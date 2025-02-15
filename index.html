@@ -20,7 +20,11 @@
       <div class="container">
         <div class="header__wrapper">
           <a href="#" class="header-logo">
-            <img class="logo" src="resources/logo.png" alt="logo Метрика" />
+            <img
+              class="logo"
+              src="resources/header/logo.png"
+              alt="logo Метрика"
+            />
           </a>
           <nav class="nav">
             <ul class="nav__lists">
@@ -292,27 +296,69 @@
         </div>
       </section>
 
-      <section class="full-screen">
-        <div class="full-screen__container container">
-          <h3 class="full-screen__text">
-            Проект Двухкомнатной квартиры в ЖК Лесной Пейзаж
-          </h3>
+      <section class="gallery">
+        <div class="container">
+          <h2 class="gallery__title">галерея проектов</h2>
+        </div>
+
+        <div class="gallery__slides">
+          <div class="gallery__slide gallery__slide-1 gallery__slide_active">
+            <div class="container">
+              <h3 class="gallery__text">
+                Проект Двухкомнтаной квартиры в ЖК Лесной Пейзаж
+              </h3>
+            </div>
+          </div>
+          <div class="gallery__slide gallery__slide-2">
+            <div class="container">
+              <h3 class="gallery__text">Проект гостиной в ЖК Маяк</h3>
+            </div>
+          </div>
+          <div class="gallery__slide gallery__slide-3">
+            <div class="container">
+              <h3 class="gallery__text">
+                Визуализация кухни-гостиной в частном доме
+              </h3>
+            </div>
+          </div>
+          <div class="gallery__slide gallery__slide-4">
+            <div class="container">
+              <h3 class="gallery__text">
+                Проект кухни в скандинавском стиле для ЖК Северный Ветер
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery__controls">
+          <div class="container">
+            <div class="gallery__controls-wrapper">
+              <div class="gallery__control-next gallery__control-img"></div>
+              <div class="gallery__control-previous gallery__control-img"></div>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="contacts" id="contacts">
         <div class="container">
           <div class="contacts__wrapper">
-            <h2 class="contacts__text">контакты</h2>
+            <h2 class="contacts__title">контакты</h2>
             <ul class="contacts__lists">
               <li class="contacts__list">
-                <a class="contacts__link-number" href="tel:+79358954535"
+                <a
+                  class="contacts__link-number"
+                  href="tel:+79358954535"
+                  target="_black"
                   >+7 935 895-45-35</a
                 >
               </li>
               <li class="contacts__list">
-                <a class="contacts__link-mail" href="mailto:hello@mail.com"
-                  >hello@mail.com</a
+                <a
+                  class="contacts__link-mail"
+                  href="https:/t.me/koualkou"
+                  target="_black"
+                  >koualkou</a
                 >
               </li>
             </ul>
@@ -325,33 +371,41 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
-          <nav class="nav">
-            <ul class="nav__lists">
-              <li class="nav__list">
-                <a class="nav__link nav__link_transparent" href="#about"
+          <nav class="footer__nav">
+            <ul class="footer-nav__lists">
+              <li class="footer-nav__list">
+                <a class="footer-nav__link nav__link_transparent" href="#about"
                   >о нас</a
                 >
               </li>
-              <li class="nav__list">
-                <a class="nav__link nav__link_transparent" href="#projects"
+              <li class="footer-nav__list">
+                <a
+                  class="footer-nav__link nav__link_transparent"
+                  href="#projects"
                   >проекты</a
                 >
               </li>
-              <li class="nav__list">
-                <a class="nav__link nav__link_transparent" href="#services"
+              <li class="footer-nav__list">
+                <a
+                  class="footer-nav__link nav__link_transparent"
+                  href="#services"
                   >услуги</a
                 >
               </li>
-              <li class="nav__list">
-                <a class="nav__link nav__link_transparent" href="#contacts"
+              <li class="footer-nav__list">
+                <a
+                  class="footer-nav__link nav__link_transparent"
+                  href="#contacts"
                   >контакты</a
                 >
               </li>
             </ul>
           </nav>
+          <p class="footer__text">студия дизайна интерьера Метрика — 2023</p>
         </div>
-        <p class="footer__text">студия дизайна интерьера Метрика — 2023</p>
       </div>
     </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>
