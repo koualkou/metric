@@ -1,0 +1,80 @@
+.about__btn {
+  padding: 20px 41px;
+  display: inline-block;
+  border-radius: 5px;
+  line-height: 27.32px;
+  font-size: 20px;
+  color: #fff;
+  background: #ad1818;
+}
+
+.projects__btn {
+  width: 100%;
+  padding: 56px 0;
+  border: 1px solid #ad1818;
+  display: block;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 40.98px;
+  color: #ad1818;
+  background: #fff;
+}
+
+.projects__btn:hover {
+  background: #ad1818;
+  color: #fff;
+}
+
+.services__btn {
+  width: 100%;
+  padding: 56px 0;
+  border-radius: 5px;
+  background: #ad1818;
+  font-size: 30px;
+  color: #fff;
+  line-height: 40.98px;
+}
+
+.order__btn {
+  padding: 20px 0;
+  width: 100%;
+  font-size: 20px;
+  line-height: 27.32px;
+  border-radius: 5px;
+  background: #ad1818;
+  color: #fff;
+}
+
+@media (max-width: 1199px) {
+  .projects__btn {
+    padding: 55px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .about__btn {
+    padding: 15px 27px;
+    font-size: 16px;
+    line-height: 21.86px;
+  }
+
+  .projects__btn {
+    padding: 34px 0;
+    font-size: 22px;
+    line-height: 30.05px;
+  }
+
+  .services__btn {
+    padding: 35px 0;
+    font-size: 22px;
+    line-height: 30.05px;
+  }
+
+  .order__btn {
+    font-size: 20px;
+    line-height: 27.32px;
+  }
+}

@@ -1,0 +1,119 @@
+.contacts {
+  padding: 150px 0 148px 0;
+}
+
+.contacts__title {
+  margin-bottom: 74px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.59px;
+  text-transform: uppercase;
+}
+
+.contacts__lists {
+  display: flex;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px;
+}
+
+.contacts__list {
+  width: 50%;
+}
+
+.contacts__link-number {
+  position: relative;
+  margin-bottom: 31px;
+  letter-spacing: -0.03px;
+}
+
+.contacts__link-number:after {
+  position: absolute;
+  top: -40px;
+  left: -6px;
+  width: 24px;
+  height: 24px;
+  content: "";
+  background-image: url(../resources/contacts/phone.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+
+.contacts__link-mail {
+  position: relative;
+  opacity: 50%;
+  color: #121212;
+  border-bottom: 2px solid #121212;
+  display: block;
+}
+
+.contacts__link-mail:after {
+  position: absolute;
+  top: -50px;
+  width: 24px;
+  height: 24px;
+  content: "";
+  background-image: url(../resources/contacts/letter.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+
+.contacts__link-number,
+.contacts__link-mail {
+  display: inline;
+  width: 100%;
+}
+
+@media (max-width: 1199px) {
+  .contacts {
+    padding: 120px 0 118px 0;
+  }
+
+  .contacts__lists {
+    font-size: 45px;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contacts {
+    padding: 80px 0 80px 0;
+  }
+
+  .contacts__lists {
+    flex-direction: column;
+    row-gap: 58px;
+  }
+
+  .contacts__list {
+    width: 100%;
+  }
+
+  .contacts__title {
+    margin-bottom: 57px;
+    font-size: 14px;
+    line-height: 19.12px;
+  }
+
+  .contacts__lists {
+    font-size: 35px;
+    line-height: 45.62px;
+  }
+
+  .contacts__link-number:after {
+    top: -36px;
+    left: 0;
+    width: 10px;
+    height: 17px;
+    background-image: url(../resources/contacts/phone-phone.png);
+  }
+
+  .contacts__link-mail:after {
+    top: -35px;
+    width: 15px;
+    height: 12px;
+    background-image: url(../resources/contacts/letter-phone.png);
+  }
+}
