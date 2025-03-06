@@ -51,67 +51,108 @@
             </ul>
           </nav>
           <div class="js-burger-btn burger-btn"></div>
+          <div class="js-burger burger">
+            <div class="burger__content">
+              <a href="#" class="header-logo">
+                <img
+                  class="burger-logo logo"
+                  src="resources/header/logo.png"
+                  alt="logo Метрика"
+                />
+              </a>
+              <nav class="burger-nav">
+                <ul class="burger-nav__lists">
+                  <li class="burger-nav__list">
+                    <a
+                      class="burger-nav__link nav__link_underlined"
+                      href="#about"
+                      >о нас</a
+                    >
+                  </li>
+                  <li class="burger-nav__list">
+                    <a
+                      class="burger-nav__link nav__link_underlined"
+                      href="#projects"
+                      >проекты</a
+                    >
+                  </li>
+                  <li class="burger-nav__list">
+                    <a
+                      class="burger-nav__link nav__link_underlined"
+                      href="#services"
+                      >услуги</a
+                    >
+                  </li>
+                  <li class="burger-nav__list">
+                    <a
+                      class="burger-nav__link nav__link_underlined"
+                      href="#contacts"
+                      >контакты</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <h3 class="burger__title">для связи:</h3>
+              <ul class="js-burger__content burger-contacts__lists">
+                <li class="burger-contacts__list">
+                  <a
+                    class="burger-contacts__link-number"
+                    href="tel:+79358954535"
+                    target="_black"
+                    >+7 935 895-45-35</a
+                  >
+                </li>
+                <li class="burger-contacts__list">
+                  <a
+                    class="burger-contacts__link-mail"
+                    href="https:/t.me/koualkou"
+                    target="_black"
+                    >koualkou</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </header>
     <!-- Head -->
 
-    <div class="js-burger burger">
-      <div class="js-burger__content burger__content">
-        <a href="#" class="header-logo">
-          <img
-            class="burger-logo logo"
-            src="resources/header/logo.png"
-            alt="logo Метрика"
-          />
-        </a>
-        <nav class="burger-nav">
-          <ul class="burger-nav__lists">
-            <li class="burger-nav__list">
-              <a class="burger-nav__link nav__link_underlined" href="#about"
-                >о нас</a
-              >
-            </li>
-            <li class="burger-nav__list">
-              <a class="burger-nav__link nav__link_underlined" href="#projects"
-                >проекты</a
-              >
-            </li>
-            <li class="burger-nav__list">
-              <a class="burger-nav__link nav__link_underlined" href="#services"
-                >услуги</a
-              >
-            </li>
-            <li class="burger-nav__list">
-              <a class="burger-nav__link nav__link_underlined" href="#contacts"
-                >контакты</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <h3 class="burger__title">для связи:</h3>
-        <ul class="burger-contacts__lists">
-          <li class="burger-contacts__list">
-            <a
-              class="burger-contacts__link-number"
-              href="tel:+79358954535"
-              target="_black"
-              >+7 935 895-45-35</a
-            >
-          </li>
-          <li class="burger-contacts__list">
-            <a
-              class="burger-contacts__link-mail"
-              href="https:/t.me/koualkou"
-              target="_black"
-              >koualkou</a
-            >
-          </li>
-        </ul>
-      </div>
-    </div>
-
     <main>
+      <div class="js-popup popup">
+        <div class="js-popup__content popup__content">
+          <div class="popup__close">
+            <div class="js-popup__close-btn popup__close-btn"></div>
+          </div>
+          <div class="order">
+            <h3 class="order__title">Заказать услугу</h3>
+            <p class="order__text">
+              Заполните форму, мы свяжемся с вами в течение суток
+            </p>
+            <form action="" class="order__form">
+              <input
+                class="input order__input"
+                type="text"
+                name="name"
+                placeholder="Имя"
+              />
+              <input
+                class="input order__input"
+                type="email"
+                name="email"
+                placeholder="Электронная почта"
+              />
+              <input
+                class="input order__input"
+                type="tel"
+                name="phone"
+                placeholder="Номер телефона"
+              />
+            </form>
+            <button class="order__btn">Отправить</button>
+          </div>
+        </div>
+      </div>
       <section class="interior">
         <div class="container">
           <h1 class="interior__title">
@@ -127,7 +168,6 @@
           </div>
         </div>
       </section>
-
       <section class="about" id="about">
         <div class="container">
           <h2 class="about__title title">О НАС</h2>
@@ -140,7 +180,6 @@
           <a class="about__btn" href="#services">Посмотреть услуги</a>
         </div>
       </section>
-
       <section class="projects" id="projects">
         <div class="container">
           <h2 class="projects__title">проекты</h2>
@@ -212,7 +251,6 @@
           <a class="projects__btn" href="#projects">Смотреть все проекты</a>
         </div>
       </section>
-
       <section class="services" id="services">
         <div class="container">
           <h2 class="services__title">Услуги</h2>
@@ -295,34 +333,8 @@
             </li>
           </ul>
           <button class="js-btn services__btn">Заказать услугу</button>
-          <div class="js-popup popup">
-            <div class="js-popup__content popup__content">
-              <div class="popup__close">
-                <div class="js-popup__close-btn popup__close-btn"></div>
-              </div>
-              <h3 class="popup__title">Заказать услугу</h3>
-              <p class="popup__text">
-                Заполните форму, мы свяжемся с вами в течение суток
-              </p>
-              <form action="" class="popup__form">
-                <input type="text" class="popup__input" placeholder="Имя" />
-                <input
-                  type="text"
-                  class="popup__input"
-                  placeholder="Электронная почта"
-                />
-                <input
-                  type="text"
-                  class="popup__input"
-                  placeholder="Номер телефона"
-                />
-              </form>
-              <button class="popup__btn">Отправить</button>
-            </div>
-          </div>
         </div>
       </section>
-
       <section class="reviews">
         <div class="container">
           <h2 class="reviews__title" id="reviews">отзывы</h2>
@@ -335,7 +347,8 @@
                 Спасибо за Ваше умение правильно слышать пожелания своих
                 клиентов и выполнять работу, которая превосходит все ожидания!
                 Мы даже не надеялись, что на 34 кв.м. кто-то сможет нам грамотно
-                разместить все, что мы хотим и даже больше! <br />
+                разместить все, что мы хотим и даже больше!
+                <br />
                 <br />
                 Вам удалось это просто превосходно! Нам лишь осталось воплотить
                 красоту, которую Вы нам создали в жизнь и поделиться с Вами
@@ -376,12 +389,10 @@
           </ul>
         </div>
       </section>
-
       <section class="gallery">
         <div class="container">
           <h2 class="gallery__title">галерея проектов</h2>
         </div>
-
         <div class="gallery__slides">
           <div class="gallery__slide gallery__slide-1 gallery__slide_active">
             <div class="container">
@@ -410,7 +421,6 @@
             </div>
           </div>
         </div>
-
         <div class="gallery__controls">
           <div class="container">
             <div class="gallery__controls-wrapper">
@@ -420,7 +430,6 @@
           </div>
         </div>
       </section>
-
       <section class="contacts" id="contacts">
         <div class="container">
           <div class="contacts__wrapper">
@@ -448,7 +457,6 @@
       </section>
     </main>
     <!-- Main -->
-
     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
